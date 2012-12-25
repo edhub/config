@@ -1,2 +1,9 @@
 [color]
     ui = auto
+[alias]
+    st = status
+    cm = commit
+    br = branch
+    ck = checkout
+    df = diff
+    dfc = diff --cached
