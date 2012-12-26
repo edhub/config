@@ -3,7 +3,8 @@
 [alias]
     st = status
     cm = commit
+    cma = commit --amend
     br = branch
-    ck = checkout
+    co = checkout
     df = diff
     dfc = diff --cached

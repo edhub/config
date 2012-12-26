@@ -10,7 +10,9 @@ First clone this git somewhere, for example:'~/myenv', "envfolder" indicate the 
 echo 'source envfolder/bashrc' >> ~/.bashrc
 
 ===vimrc===
-ln envfolder/vimrc ~/.vimrc
+ln -s envfolder/vimrc ~/.vimrc
 
 ===gitconfig===
 sudo cp envfolder/gitconfig /etc/
+
+So that, when you sync your git to the latest version, bashrc, and vimrc will get the latest version automatically. Unfortunately, I don't find a way to make gitconfig update automatically. But it won't get update frequently, so it's OK anyway.

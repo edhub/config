@@ -53,6 +53,12 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" Set no compatible with vi
+set nocompatible
+
+" Show command at the right bottom corner
+set showcmd
+
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
@@ -65,28 +71,16 @@ nmap <leader>w :w!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
-
 " Set window size
-set lines=45 columns=120
+if winheight(0) < 30
+    set lines=30
+endif
+if winwidth(0) < 100
+    set columns=100
+endif
 
 " Turn on the WiLd menu
 set wildmenu
-
-" Ignore compiled files
-set wildignore=*.o,*~,*.pyc
-if has("win16") || has("win32")
-    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-else
-    set wildignore+=.git\*,.hg\*,.svn\*
-endif
-
-"Always show current position
-set ruler
-
-" Height of the command bar
-set cmdheight=2
 
 " A buffer becomes hidden when it is abandoned
 set hid
@@ -123,10 +117,6 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
-
-" Add a bit extra margin to the left
-set foldcolumn=1
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
