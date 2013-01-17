@@ -4,7 +4,8 @@
     st = status
     cm = commit
     cma = commit --amend
-    br = branch
+    br = branch -v
+    cp = cherry-pick
     co = checkout
     df = diff
     dfc = diff --cached
