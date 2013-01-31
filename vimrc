@@ -214,8 +214,10 @@ map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
 " Vimgreps in the current file
 map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
 
-" When you press <leader>r you can search and replace the selected text
+" Quick search/replace text in visual mode
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
+vnoremap <silent> * :call VisualSelection('f', '')<CR>
+vnoremap <silent> # :call VisualSelection('b', '')<CR>
 
 " Do :help cope if you are unsure what cope is. It's super useful!
 "
@@ -318,6 +320,24 @@ function! <SID>BufcloseCloseIt()
         execute("bdelete! ".l:currentBufNum)
     endif
 endfunction
+"}}}
+
+" Writing in Chinese in GUI"{{{
+" Good IME toggle in GUI
+if has("gui_running")
+    set ims=-1
+    command! CnMode call ToggleCnMode(1)
+    command! NoCnMode call ToggleCnMode(0)
+    function! ToggleCnMode(enable)
+        if a:enable
+            set lsp=5
+            colo novel
+        else
+            set lsp=1
+            colo desert
+        endif
+    endfunction
+endif
 "}}}
 
 " vim:set foldmethod=marker:
