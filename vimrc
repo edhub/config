@@ -103,6 +103,7 @@ set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
+    set guioptions+=a " Always allow Ctrl-C to copy
     set guioptions-=T
     set guioptions-=e
     set t_Co=256
