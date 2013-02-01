@@ -49,6 +49,9 @@ set wildmenu
 " A buffer becomes hidden when it is abandoned
 set hid
 
+" Do not hide the line at bottom when it's too long
+set display=lastline
+
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
@@ -136,6 +139,8 @@ set wrap "Wrap lines
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
+map <Up> g<Up>
+map <Down> g<Down>
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
@@ -331,8 +336,10 @@ if has("gui_running")
     function! ToggleCnMode(enable)
         if a:enable
             set lsp=5
+            set nolbr
             colo novel
         else
+            set lbr
             set lsp=1
             colo desert
         endif
