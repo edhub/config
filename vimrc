@@ -261,6 +261,9 @@ set noswapfile
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
+" Add file encodings.
+set fileencodings=ucs-bom,utf-8,gb18030,cp936,big5,euc-jp,latin1
+
 " Quickly open a buffer for scripbble
 map <leader>q :e ~/buffer<cr>
 
