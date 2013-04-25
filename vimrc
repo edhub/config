@@ -8,6 +8,9 @@
 " Sets how many lines of history VIM has to remember
 set history=700
 
+" file detection task list file
+au BufNewFile,BufRead *.tskcl     setf tskcl
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
