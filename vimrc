@@ -333,24 +333,4 @@ function! <SID>BufcloseCloseIt()
 endfunction
 "}}}
 
-" Writing in Chinese in GUI"{{{
-" Good IME toggle in GUI
-if has("gui_running")
-    set ims=-1
-    command! CnMode call ToggleCnMode(1)
-    command! NoCnMode call ToggleCnMode(0)
-    function! ToggleCnMode(enable)
-        if a:enable
-            set lsp=5
-            set nolbr
-            colo novel
-        else
-            set lbr
-            set lsp=1
-            colo desert
-        endif
-    endfunction
-endif
-"}}}
-
 " vim:set foldmethod=marker:
