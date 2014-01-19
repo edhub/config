@@ -8,7 +8,7 @@ syn region TaskDone start=/^[DC]-/ end=/$/ oneline
 syn region TaskFail start=/^[F]-/ end=/$/ oneline
 syn region SubItemToDo start=/^	-\s/ end=/$/ oneline
 syn region SubItem start=/^	-[RDICF]\s/ end=/$/ oneline
-syn region TimeLine start=/=\{5}w/ end=/$/ oneline
+syn region TimeLine start=/^=\{5}/ end=/$/ oneline
 
 hi Normal guibg=grey20
 hi TaskPro1 guifg=#ff7777 ctermfg=yellow
@@ -24,4 +24,9 @@ set noexpandtab
 set tabstop=6
 set shiftwidth=6
 
+" Quick insert date
+iab <expr> til ShowTimeLine()
 
+func! ShowTimeLine()
+    return "=====" . strftime("%Y-%m-%d %H:%M") . "====="
+endfunc

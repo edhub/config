@@ -9,5 +9,6 @@
     co = checkout
     df = diff
     dfc = diff --cached
+    showl = show --name-only
 [core]
     editor = vim
