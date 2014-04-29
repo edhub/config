@@ -13,7 +13,7 @@ syn region TimeLine start=/^=\{5}/ end=/$/ oneline
 hi Normal guibg=grey20
 hi TaskPro1 guifg=#ff7777 ctermfg=yellow
 hi TaskPro2 guifg=cyan ctermfg=brown
-hi TaskPro3 guifg=#009999 ctermfg=magenta
+hi TaskPro3 guifg=#009999 ctermfg=darkblue
 hi TaskDone guifg=grey70 ctermfg=grey
 hi TaskFail guifg=#FFCC99 ctermfg=grey
 hi SubItem guifg=darkgrey  ctermfg=darkgrey

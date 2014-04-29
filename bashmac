@@ -14,3 +14,6 @@ alias pwdc="pwd | tr -d '\n' | pbcopy"
 
 # Display full path in prompt
 export PS1='\u@\H: \w$ '
+
+# Set en_US locale to avoid ???? issue
+export LC_ALL=en_US.UTF-8

@@ -7,8 +7,8 @@
     br = branch -v
     cp = cherry-pick
     co = checkout
-    df = diff
-    dfc = diff --cached
+    df = diff -C
+    dfc = diff --cached -C
     showl = show --name-only
 [core]
     editor = vim
