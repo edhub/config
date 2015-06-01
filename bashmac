@@ -17,3 +17,6 @@ export PS1='\u@\H: \w$ '
 
 # Set en_US locale to avoid ???? issue
 export LC_ALL=en_US.UTF-8
+
+# gradle build shortcut
+alias gdw='./gradlew'

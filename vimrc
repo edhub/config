@@ -15,6 +15,9 @@ au BufNewFile,BufRead *.tskcl     setf tskcl
 filetype plugin on
 filetype indent on
 
+" match pairs
+set mps+=<:>
+
 " Set to auto read when a file is changed from the outside
 set autoread
 
