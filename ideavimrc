@@ -1,4 +1,8 @@
-set nocompatible
+" ========= Basic =========
+
+let mapleader = " "
+
+" ========= Navigation =========
 
 " Ignore case when searching
 set ignorecase
@@ -15,5 +19,16 @@ set incsearch
 " match pairs
 set mps+=<:>
 
-" Remap VIM 0 to first non-blank character
-map 0 ^
+" ========= Editing =========
+
+" When on, the :substitute flag 'g' is default on.
+set gdefault
+
+" Copy to clipboard
+map Y y$
+map <leader>y "+y
+map <leader>Y "+Y
+
+" Power paste
+nmap <leader>p "_diwP
+vmap <leader>p "_xP

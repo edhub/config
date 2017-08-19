@@ -75,6 +75,7 @@ set mps+=<:>
 
 " For regular expressions turn magic on
 set magic
+
 " Ignore case when searching
 set ignorecase
 
@@ -98,6 +99,9 @@ map <C-l> <C-W>l
 " map <C-w> :close<CR>
 
 " ========= Editing =========
+
+" When on, the :substitute flag 'g' is default on.
+set gdefault
 
 set si "Smart indent
 
