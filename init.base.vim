@@ -36,7 +36,7 @@ set ffs=unix,dos,mac
 set fileencodings=ucs-bom,utf-8,gb18030,cp936,big5,euc-jp,latin1
 
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+nnoremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " ========= Display =========
 
@@ -66,7 +66,7 @@ set lbr
 set tw=500
 
 " Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
+nnoremap <silent> <leader><cr> :noh<cr>
 
 " ========= Navigation =========
 
@@ -86,17 +86,16 @@ set smartcase
 set wildmode=list:longest
 
 " Treat long lines as break lines (useful when moving around in them)
-map j gj
-map k gk
-map <Up> g<Up>
-map <Down> g<Down>
+nnoremap j gj
+nnoremap k gk
+nnoremap <Up> g<Up>
+nnoremap <Down> g<Down>
 
 " Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-" map <C-w> :close<CR>
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 
 " ========= Editing =========
 
@@ -113,14 +112,18 @@ set shiftwidth=4
 set tabstop=4
 
 " Fast saving
-nmap <leader>w :w!<cr>
-nmap <leader>q :q<cr>
+nnoremap <leader>w :w!<cr>
+nnoremap <leader>q :q<cr>
+
+" Always ways copy the word and only the word (without potential space)
+nnoremap ye yiw
+
+" Copy from current position to end of line
+nnoremap Y y$
 
 " Copy to clipboard
-map Y y$
-map <leader>y "+y
-map <leader>Y "+Y
+nnoremap <leader>y "+y
+nnoremap <leader>Y "+Y
 
-" Power paste
-nmap <leader>p "_diwP
-vmap <leader>p "_xP
+" Substitute current word with content in " register
+nnoremap <leader>p "_diwP

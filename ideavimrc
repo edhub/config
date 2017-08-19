@@ -21,14 +21,18 @@ set mps+=<:>
 
 " ========= Editing =========
 
-" When on, the :substitute flag 'g' is default on.
-set gdefault
+" Fast saving
+nnoremap <leader>w :w!<cr>
+
+" Always ways copy the word and only the word (without potential space)
+nnoremap ye yiw
+
+" Copy from current position to end of line
+nnoremap Y y$
 
 " Copy to clipboard
-map Y y$
-map <leader>y "+y
-map <leader>Y "+Y
+nnoremap <leader>y "+y
+nnoremap <leader>Y "+Y
 
-" Power paste
-nmap <leader>p "_diwP
-vmap <leader>p "_xP
+" Substitute current word with content in " register
+nnoremap <leader>p "_diwP
