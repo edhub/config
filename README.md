@@ -6,5 +6,5 @@ Here are the configs I'm trying to keep:
 
 ~/.bash_profile -> bash_profile
 ~/.gitconfig -> gitconfig
-~/.vimrc -> vimrc
+~/.vimrc -> init.base.vim + init.vundle.vim
 ~/.ideavimrc -> ideavimrc
