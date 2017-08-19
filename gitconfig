@@ -1,5 +1,18 @@
+# Usage: added following 2 lines to ~/.gitconfig
+# [include]
+#    path = /path/to/this/file
+
 [color]
-    ui = auto
+	ui = auto
+[core]
+    editor = nvim
+    quotepath = false
+[user]
+	name = Edward Gu
+	email = edhroyal@gmail.com
+[url "git@github.com:"]
+    insteadOf = "https://github.com/"
+
 [alias]
     st = status
     cm = commit
@@ -11,5 +24,20 @@
     dfc = diff --cached -C
     showl = show --name-only
     rmt = remote -v
+    gl = log --graph --all --abbrev-commit --relative-date --date=short  --format=\"%x09 %h %Cgreen%cd%Creset [%Cblue%cn%Creset] %C(auto)%d%Creset %s\"
+
+# diff color config. require diff-so-fancy installed
 [core]
-    editor = vim
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 227
+	frag = magenta bold
+	commit = 227 bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
