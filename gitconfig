@@ -3,13 +3,17 @@
 #    path = /path/to/this/file
 
 [color]
-	ui = auto
+    branch = auto
+    diff = auto
+    status = auto
+    showbranch = auto
+    ui = true
 [core]
     editor = nvim
     quotepath = false
 [user]
-	name = Edward Gu
-	email = edhroyal@gmail.com
+    name = Edward Gu
+    email = edhroyal@gmail.com
 [url "git@github.com:"]
     insteadOf = "https://github.com/"
 
@@ -20,24 +24,26 @@
     br = branch -v
     cp = cherry-pick
     co = checkout
-    df = diff -C
-    dfc = diff --cached -C
+    df = diff -C --color-words='[^[:space:]]'
+    dfc = diff --cached -C --color-words='[^[:space:]]'
     showl = show --name-status -C
     rmt = remote -v
     gl = log --graph --all --abbrev-commit --relative-date --date=short  --format=\"%x09 %h %Cgreen%cd%Creset [%Cblue%cn%Creset] %C(auto)%d%Creset %s\"
 
 # diff color config. require diff-so-fancy installed
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+    pager = diff-so-fancy | less --tabs=4 -RFX
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
 [color "diff"]
-	meta = 227
-	frag = magenta bold
-	commit = 227 bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+    meta = 227
+    frag = magenta bold
+    commit = 227 bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[diff-so-fancy]
+    markEmptyLines = false
