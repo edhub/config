@@ -122,8 +122,8 @@ nnoremap ye yiw
 nnoremap Y y$
 
 " Copy to clipboard
-nnoremap <leader>y "+y
-nnoremap <leader>Y "+Y
+nmap <leader>y "+y
+nmap <leader>Y "+Y
 
 " Substitute current word with content in " register
 nnoremap <leader>p "_diwP

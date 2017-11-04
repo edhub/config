@@ -20,6 +20,10 @@ Plugin 'mhartington/oceanic-next' " oceanic-next theme
 
 Plugin 'ctrlpvim/ctrlp.vim' " ctrlp
 
+Plugin 'scrooloose/nerdtree' " nerdtree
+
+Plugin 'Xuyuanp/nerdtree-git-plugin' " nerdtree
+
 " Plugin 'vim-syntastic/syntastic' " Syntastic is a syntax checking plugin for Vim
 
 " Plugin 'Chiel92/vim-autoformat' "This plugin makes use of external formatting programs to achieve the best results.
