@@ -14,8 +14,8 @@
 [user]
     name = Edward Gu
     email = edhroyal@gmail.com
-[url "git@github.com:"]
-    insteadOf = "https://github.com/"
+#[url "git@github.com:"]
+    #insteadOf = "https://github.com/"
 
 [alias]
     st = status
@@ -24,8 +24,8 @@
     br = branch -v
     cp = cherry-pick
     co = checkout
-    df = diff -C --color-words='[^[:space:]]'
-    dfc = diff --cached -C --color-words='[^[:space:]]'
+    df = diff -C
+    dfc = diff --cached
     showl = show --name-status -C
     rmt = remote -v
     gl = log --graph --all --abbrev-commit --relative-date --date=short  --format=\"%x09 %h %Cgreen%cd%Creset [%Cblue%cn%Creset] %C(auto)%d%Creset %s\"
