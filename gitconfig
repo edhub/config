@@ -6,6 +6,10 @@
     ui = true
 [core]
     editor = nvim
+    # X don't clear screen when exit
+    # F exit if one-screen
+    # R retain color display
+    pager = less -FXR
     quotepath = false
 [user]
     name = Edward Gu
@@ -14,6 +18,7 @@
 # Special treat for rust update
 [url "https://github.com/rust-lang"]
     insteadOf = "https://github.com/rust-lang"
+
 # Use git protocal by default
 [url "git@github.com:"]
     insteadOf = "https://github.com/"
@@ -29,4 +34,3 @@
     dfc = diff --cached
     showl = show --name-status -C
     rmt = remote -v
-    gl = log --graph --all --abbrev-commit --relative-date --date=short  --format=\"%x09 %h %Cgreen%cd%Creset [%Cblue%cn%Creset] %C(auto)%d%Creset %s\"
