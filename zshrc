@@ -10,6 +10,7 @@ alias ls='lsd' # classify files in colour
 alias la='lsd -A' # all but . and ..
 alias ll='lsd -lA' # long list without . and ..
 alias lt='lsd --tree'
+alias ltd='lsd --tree --depth'
 
 
 # set proxy. With shadowsocks-ng
