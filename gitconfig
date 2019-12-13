@@ -11,6 +11,7 @@
     # R retain color display
     pager = less -FXR
     quotepath = false
+    excludesfile = /Users/edh/dev/config/gitignore
 [user]
     name = Edward Gu
     email = edhroyal@gmail.com
