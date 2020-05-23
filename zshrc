@@ -14,7 +14,7 @@ alias ltd='lsd --tree --depth'
 
 
 # set proxy. With shadowsocks-ng
-alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1086 && echo \"set proxy: ALL_PROXY=socks5://127.0.0.1:1086\""
+alias setproxy="export ALL_PROXY=socks5://127.0.0.1:10000 && echo \"set proxy: ALL_PROXY=socks5://127.0.0.1:10000\""
 alias unsetproxy="unset ALL_PROXY && echo \"unset proxy\""
 
 # brew daily
