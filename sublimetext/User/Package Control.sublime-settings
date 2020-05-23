@@ -1,0 +1,20 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"JsPrettier",
+		"NeoVintageous",
+		"Package Control",
+		"Rust Enhanced",
+		"RustFmt",
+		"Svelte",
+		"Svelte Snippets",
+		"Tailwind CSS Autocomplete",
+		"TOML",
+		"TypeScript"
+	]
+}
