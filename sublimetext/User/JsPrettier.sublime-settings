@@ -1,8 +1,7 @@
 {
-	"auto_format_on_save": true,
-	"custom_file_extensions": ["svelte"],
-	"prettier_options": {
-		"printWidth": 120,
-		"singleQuote": true
-	}
+    "auto_format_on_save": true,
+    "custom_file_extensions": ["svelte"],
+    "prettier_options": {
+        "singleQuote": true
+    }
 }

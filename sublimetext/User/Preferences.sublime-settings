@@ -1,14 +1,26 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".idea",
+		".git",
+		".hg",
+		"CVS",
+		"target"
+	],
 	"font_size": 13,
 	"ignored_packages":
 	[
 		"Rust",
+		"Six",
 		"Vintage",
 		"Vintageous"
 	],
 	"neovintageous_build_version": 11100,
 	"save_on_focus_lost": true,
 	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"vintageous_use_ctrl_keys": null,
+	"vintageous_use_super_keys": null
 }

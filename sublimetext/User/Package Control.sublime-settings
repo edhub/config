@@ -6,11 +6,16 @@
 	"installed_packages":
 	[
 		"Babel",
+		"Babel Snippets",
+		"EditorConfig",
 		"JsPrettier",
+		"MarkdownPreview",
 		"NeoVintageous",
 		"Package Control",
 		"Rust Enhanced",
 		"RustFmt",
+		"Six",
+		"Sublimerge 3",
 		"Svelte",
 		"Svelte Snippets",
 		"Tailwind CSS Autocomplete",
