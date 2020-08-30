@@ -1,7 +1,7 @@
 {
     "auto_format_on_save": true,
     "custom_file_extensions": ["svelte"],
-    "prettier_options": {
-        "singleQuote": true
+    "additional_cli_args": {
+        "--parser":""
     }
 }

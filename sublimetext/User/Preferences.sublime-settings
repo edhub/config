@@ -12,13 +12,14 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
+		"NeoVintageous",
 		"Rust",
-		"Six",
 		"Vintage",
 		"Vintageous"
 	],
 	"neovintageous_build_version": 11100,
 	"save_on_focus_lost": true,
+	"scroll_past_end": true,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"vintageous_use_ctrl_keys": null,
