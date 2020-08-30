@@ -1,2 +1,2 @@
-User/**/*.*
-!User/**/*.sublime.settings
+User/*
+!User/**/*.sublime-settings

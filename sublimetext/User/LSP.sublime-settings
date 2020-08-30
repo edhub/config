@@ -1,0 +1,17 @@
+{
+  "show_view_status": true,
+  "clients": {
+    "dart": {
+      "enabled": true
+    },
+    "rls": {
+      "command": [
+        "rustup",
+        "run",
+        "stable",
+        "rls"
+      ],
+      "enabled": true
+    }
+  }
+}
