@@ -4,6 +4,7 @@ set -o vi
 # nvim
 alias vi="nvim"
 alias vim="nvim"
+alias vif="nvim -o \`fzf\`"
 
 # Some shortcuts for different directory listings
 alias ls='lsd' # classify files in colour

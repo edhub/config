@@ -19,6 +19,9 @@ set incsearch
 " match pairs
 set mps+=<:>
 
+" 4 lines above/below cursor when scrolling
+set scrolloff=4
+
 " ========= Editing =========
 
 " Fast saving
@@ -35,4 +38,8 @@ nnoremap <leader>y "+y
 nnoremap <leader>Y "+Y
 
 " Substitute current word with content in " register
-nnoremap <leader>p "_diwP
+nnoremap <Leader>v viw"0p
+vnoremap <Leader>v    "0p
+
+" Plugin: surround
+set surround

@@ -125,5 +125,9 @@ nnoremap Y y$
 nmap <leader>y "+y
 nmap <leader>Y "+Y
 
-" Substitute current word with content in " register
-nnoremap <leader>p "_diwP
+" 替换光标下单词的键映射
+nnoremap <Leader>v viw"0p
+vnoremap <Leader>v    "0p
+
+" fzf mapping
+nnoremap <C-p> :Files<CR>

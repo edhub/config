@@ -16,3 +16,7 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 # fastlane
 export PATH=$HOME/.fastlane/bin:$PATH
+
+# fzf for vim
+# export FZF_DEFAULT_COMMAND='rg --files --sortr modified'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
