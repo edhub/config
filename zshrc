@@ -22,5 +22,8 @@ alias unsetproxy="unset ALL_PROXY && echo \"unset proxy\""
 alias brewdaily="setproxy && brew upgrade && brew cleanup && unsetproxy"
 export HOMEBREW_AUTO_UPDATE_SECS=86400 # brew auto update only happen once per day
 
-#bat
+# bat
 alias cat="bat"
+
+# starship prompt
+eval "$(starship init zsh)"
