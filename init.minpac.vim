@@ -19,8 +19,11 @@ function! PackInit() abort
   " Svelte syntax support
   call minpac#add('evanleck/vim-svelte')
 
-  "nerdtree
+  " nerdtree
   call minpac#add('scrooloose/nerdtree')
+
+  " Prettier
+  call minpac#add('prettier/vim-prettier', {'do': 'yarn install', 'branch': 'release/0.x'})
 
 endfunction
 
