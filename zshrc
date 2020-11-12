@@ -24,6 +24,3 @@ export HOMEBREW_AUTO_UPDATE_SECS=86400 # brew auto update only happen once per d
 
 # bat
 alias cat="bat"
-
-# starship prompt
-eval "$(starship init zsh)"
