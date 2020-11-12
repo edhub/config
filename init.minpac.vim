@@ -16,6 +16,12 @@ function! PackInit() abort
   call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
   call minpac#add('junegunn/fzf.vim')
 
+  " JSX
+  call minpac#add('ianks/vim-tsx')
+
+  " Typescript
+  call minpac#add('leafgarland/typescript-vim')
+
   " Svelte syntax support
   call minpac#add('evanleck/vim-svelte')
 
