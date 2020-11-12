@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Breakers.sublime-color-scheme",
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -7,9 +7,11 @@
 		".git",
 		".hg",
 		"CVS",
-		"target"
+		"target",
+		"node_modules",
+		"dist"
 	],
-	"font_size": 13,
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"NeoVintageous",
