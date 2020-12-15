@@ -20,3 +20,7 @@ export PATH=$HOME/.fastlane/bin:$PATH
 # fzf for vim
 # export FZF_DEFAULT_COMMAND='rg --files --sortr modified'
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+# sublime command line
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+export PATH="/Applications/Sublime Merge.app/Contents/SharedSupport/bin:$PATH"
