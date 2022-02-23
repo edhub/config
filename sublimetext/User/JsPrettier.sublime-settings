@@ -1,5 +1,6 @@
 {
     "auto_format_on_save": true,
+    "auto_format_on_save_excludes": ["*.md"],
     "custom_file_extensions": ["svelte"],
     "additional_cli_args": {
         "--parser":""

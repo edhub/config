@@ -9,6 +9,8 @@
 		"Babel Snippets",
 		"EditorConfig",
 		"JsPrettier",
+		"LSP",
+		"LSP-svelte",
 		"MarkdownPreview",
 		"NeoVintageous",
 		"Package Control",
@@ -18,8 +20,9 @@
 		"Sublimerge 3",
 		"Svelte",
 		"Svelte Snippets",
+		"Tailwind CSS",
 		"Tailwind CSS Autocomplete",
 		"TOML",
-		"TypeScript"
+		"TypeScript",
 	],
 }
