@@ -5,7 +5,7 @@
     showbranch = auto
     ui = true
 [core]
-    editor = nvim
+    editor = hx
     # X don't clear screen when exit
     # F exit if one-screen
     # R retain color display

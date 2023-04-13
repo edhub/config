@@ -1,0 +1,19 @@
+theme = "onelight"
+
+[editor]
+# cursorline = true
+# bufferline = "multiple"
+# auto-info = false
+auto-save = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+# render = true
+
+[editor.lsp]
+# auto-signature-help = false
