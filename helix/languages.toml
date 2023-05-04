@@ -11,3 +11,8 @@ file-types = ["tsx","jsx"]
 language-server = { command = "deno", args = ["lsp"]}
 config = { deno = { enable = true, lint = true } }
 auto-format = true
+
+[[language]]
+name = "svelte"
+file-types = ["svelte"]
+auto-format = true

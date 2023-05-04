@@ -16,4 +16,4 @@ hidden = false
 # render = true
 
 [editor.lsp]
-# auto-signature-help = false
+auto-signature-help = false
