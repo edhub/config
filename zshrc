@@ -7,9 +7,12 @@ alias vim="nvim"
 alias vif="nvim -o \`fzf\`"
 
 # Some shortcuts for different directory listings
-alias ls='ls -A --color' # classify files in colour
-alias ll='ls -lA --color' # long list without . and ..
-alias lt='lsd --tree'
+alias ls='lsd'
+
+alias l='ls'
+alias la='ls -a'
+alias ll='ls -la'
+alias lt='ls --tree'
 alias ltd='lsd --tree --depth'
 
 

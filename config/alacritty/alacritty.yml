@@ -697,4 +697,4 @@ selection:
   #print_events: false
 
 import:
- - ~/.config/alacritty/themes/themes/ayu_light.yaml
+ - ~/.config/alacritty/themes/ayu_light.yaml

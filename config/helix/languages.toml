@@ -16,3 +16,4 @@ auto-format = true
 name = "svelte"
 file-types = ["svelte"]
 auto-format = true
+

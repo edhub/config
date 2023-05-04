@@ -1,19 +1,14 @@
-[color]
-    branch = auto
-    diff = auto
-    status = auto
-    showbranch = auto
-    ui = true
 [core]
     editor = hx
     # X don't clear screen when exit
     # F exit if one-screen
     # R retain color display
     pager = less -FXR
-    quotepath = false
+
 [user]
     name = Edward Gu
     email = edhroyal@gmail.com
+
 [pull]
     rebase = true
 
