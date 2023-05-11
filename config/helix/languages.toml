@@ -17,3 +17,10 @@ name = "svelte"
 file-types = ["svelte"]
 auto-format = true
 
+[[language]]
+name = "python"
+roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git"]
+language-server = { command = "pyright-langserver", args = ["--stdio"] }
+auto-format = true
+formatter = {command = 'black', args = ["--quiet", "-"]}
+config = ""
