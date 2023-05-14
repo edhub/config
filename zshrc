@@ -1,5 +1,6 @@
 # Set command line edit mode to vi
 set -o vi
+setopt +o nomatch
 
 # nvim
 alias vi="nvim"
