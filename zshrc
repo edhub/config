@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+export PATH=$HOME/bin:$PATH
+
 # Set command line edit mode to vi
 set -o vi
 setopt +o nomatch

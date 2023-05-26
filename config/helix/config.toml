@@ -21,3 +21,6 @@ display-inlay-hints = true
 
 [editor.soft-wrap]
 enable = true
+
+[keys.normal.space]
+w = ":w" # Save
