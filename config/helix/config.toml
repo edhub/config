@@ -5,6 +5,7 @@ theme = "onelight"
 # bufferline = "multiple"
 # auto-info = false
 auto-save = true
+auto-pairs = false
 
 [editor.cursor-shape]
 insert = "bar"
