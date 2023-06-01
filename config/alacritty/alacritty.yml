@@ -16,6 +16,8 @@ font:
     family: Hack Nerd Font
 
   size: 14.0
+  offset:
+    y: 4 # line spacing
 
 selection:
   save_to_clipboard: true
