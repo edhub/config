@@ -5,11 +5,11 @@ auto-format = true
 
 [[language]]
 name = "python"
-roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git"]
+roots = ["pyproject.toml"]
 language-server = { command = "pyright-langserver", args = ["--stdio"] }
-auto-format = true
+config = {} # <- this is the important line
 formatter = {command = 'black', args = ["--quiet", "-"]}
-config = ""
+auto-format = true
 
 [[language]]
 name = "json"
