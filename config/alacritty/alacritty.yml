@@ -15,7 +15,7 @@ font:
   normal:
     family: Hack Nerd Font
 
-  size: 14.0
+  size: 15.0
   offset:
     y: 4 # line spacing
 

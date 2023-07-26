@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
 # Set command line edit mode to vi
-set -o vi
-setopt +o nomatch
+# set -o vi
 
 # nvim
-alias vi="nvim"
-alias vim="nvim"
-alias vif="nvim -o \`fzf\`"
+alias vi="tea +neovim.io nvim"
+alias vim="tea +neovim.io nvim"
+alias vif="tea +neovim.io nvim -o \`fzf\`"
 
 # Some shortcuts for different directory listings
 alias ls='lsd'
@@ -33,18 +32,22 @@ alias cat="bat"
 
 export PATH=$HOME/bin:$PATH
 
+#deno
+# export DENO_INSTALL="$HOME/.deno"
+export PATH="$HOME/.deno/bin:$PATH"
+
 # starship
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # autojump
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+# [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 # fzf auto complete
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# deno
-export DENO_INSTALL="$HOME/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
 
 # zsh auto suggestion
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# tea setup
+test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)

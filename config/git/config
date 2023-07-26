@@ -1,5 +1,5 @@
 [core]
-    editor = hx
+    editor = tea hx
     # X don't clear screen when exit
     # F exit if one-screen
     # R retain color display
