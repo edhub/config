@@ -28,14 +28,6 @@ export HOMEBREW_AUTO_UPDATE_SECS=86400 # brew auto update only happen once per d
 # bat
 alias cat="bat"
 
-# =========== Prompt setup
-autoload -Uz vcs_info
-precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats '%b '
-setopt PROMPT_SUBST
-NEWLINE=$'\n'
-PROMPT='${NEWLINE}%F{blue}%~%f %F{red}${vcs_info_msg_0_}%f${NEWLINE}%F{green}%B>%b%f '
-
 # =========== PATH & TOOL setup
 
 export PATH=$HOME/bin:$PATH
@@ -48,7 +40,7 @@ export PATH="$HOME/.deno/bin:$PATH"
 test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
 
 # starship
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # autojump
 # [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
