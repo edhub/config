@@ -1,20 +1,24 @@
-This repo manages my configs for shell & git & vim.
+Clone this repo under `~/dev` folder. And then setup configs follow below
+instructions.
 
-Clone this repo under `~/dev` folder. Run install.sh to install gitconfig and
 zsh configs.
-
-### basic gitconfig
-
-### ignore .idea .DS_Store
-
-```
-git config --global core.excludesfile ~/dev/config/gitignore
-```
 
 ### zshrc
 
 ```
 echo "source $HOME/dev/config/zshrc" >> ~/.zshrc
+```
+
+### xdg config folder
+
+```
+ln -s ~/dev/config/xdg ~/.config
+```
+
+### ignore .idea .DS_Store
+
+```
+git config --global core.excludesfile ~/dev/config/gitignore
 ```
 
 ### install tools with homebrew
