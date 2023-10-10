@@ -4,3 +4,5 @@ config/iterm2/
 config/stable-diffusion-webui/
 config/neofetch/
 config/jgit/
+config/.mono/
+config/flutter/

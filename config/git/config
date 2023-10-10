@@ -1,9 +1,10 @@
 [core]
-    editor = tea +helix-editor.com hx
+    editor = hx
     # X don't clear screen when exit
     # F exit if one-screen
     # R retain color display
     pager = less -FXR
+	excludesfile = /Users/edh/dev/config/gitignore
 
 [user]
     name = Edward Gu

@@ -4,18 +4,17 @@
 # set -o vi
 
 # nvim
-alias vi="tea +neovim.io nvim"
-alias vim="tea +neovim.io nvim"
-alias vif="tea +neovim.io nvim -o \`fzf\`"
+alias vi="nvim"
+alias vim="nvim"
+alias vif="nvim -o \`fzf\`"
 
 # Some shortcuts for different directory listings
-alias ls='lsd'
+alias ls='eza --icons --group-directories-first'
 
 alias l='ls'
 alias la='ls -a'
 alias ll='ls -la'
 alias lt='ls --tree'
-alias ltd='lsd --tree --depth'
 
 # set proxy. With shadowsocks-ng
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:10000 && echo \"set proxy: ALL_PROXY=socks5://127.0.0.1:10000\""
@@ -33,21 +32,14 @@ alias cat="bat"
 export PATH=$HOME/bin:$PATH
 
 #deno
-# export DENO_INSTALL="$HOME/.deno"
+export DENO_INSTALL="$HOME/.deno"
 export PATH="$HOME/.deno/bin:$PATH"
-
-# tea setup
-test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
 
 # starship
 eval "$(starship init zsh)"
 
 # autojump
-# [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
-
-# fzf auto complete
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 # zsh auto suggestion
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
