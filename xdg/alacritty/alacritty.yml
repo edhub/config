@@ -50,3 +50,7 @@ colors:
     magenta: '0xb294d2'
     cyan:    '0x75c7a8'
     white:   '0xdbdbdb'
+
+key_bindings:
+   - { key: V,  mods: alt, mode: ~Search,  action: ToggleViMode }
+

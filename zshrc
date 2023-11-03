@@ -21,7 +21,8 @@ alias setproxy="export ALL_PROXY=socks5://127.0.0.1:10000 && echo \"set proxy: A
 alias unsetproxy="unset ALL_PROXY && echo \"unset proxy\""
 
 # brew daily
-alias brewdaily="setproxy && brew upgrade && brew cleanup && unsetproxy"
+# alias brewdaily="setproxy && brew upgrade && brew cleanup && unsetproxy"
+alias brewdaily="brew upgrade && brew cleanup"
 export HOMEBREW_AUTO_UPDATE_SECS=86400 # brew auto update only happen once per day
 
 # bat
@@ -45,3 +46,9 @@ eval "$(starship init zsh)"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
+# homebrew mirror
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_PIP_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
