@@ -15,7 +15,8 @@ end
 -- changing the color scheme:
 config.color_scheme = 'Ayu Light (Gogh)'
 
-config.font_size = 16.0
+-- font size 14 is good for a larger screen. 16 is good for 16 inch mbp screen.
+config.font_size = 15.0
 config.initial_rows = 50
 config.initial_cols = 120
 

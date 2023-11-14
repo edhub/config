@@ -14,7 +14,7 @@ alias ls='eza --icons --group-directories-first'
 alias l='ls'
 alias la='ls -a'
 alias ll='ls -la'
-alias lt='ls --tree'
+alias lt='ls -T -L'
 
 # set proxy. With shadowsocks-ng
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:10000 && echo \"set proxy: ALL_PROXY=socks5://127.0.0.1:10000\""
@@ -27,6 +27,9 @@ export HOMEBREW_AUTO_UPDATE_SECS=86400 # brew auto update only happen once per d
 
 # bat
 alias cat="bat"
+
+# wezterm
+alias tt="wezterm cli set-tab-title" # set tab name
 
 # =========== PATH & TOOL setup
 

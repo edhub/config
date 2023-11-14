@@ -29,20 +29,31 @@ shebangs = ["deno"]
 roots = ["deno.json", "deno.jsonc"]
 file-types = ["js", "ts", "jsx", "tsx"]
 language-servers = ["deno-lsp"]
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts"] }
 auto-format = true
 
 [[language]]
-name = "svelte"
+name = "javascript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js"] }
 auto-format = true
 
 [[language]]
 name = "json"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json"] }
-auto-format = true
 
 [[language]]
 name = "markdown"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsx"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx"] }
 auto-format = true
 
 [[language]]
@@ -53,4 +64,9 @@ auto-format = true
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
+auto-format = true
+
+[[language]]
+name = "svelte"
+language-servers = ["tailwindcss-ls", "svelteserver"]
 auto-format = true
