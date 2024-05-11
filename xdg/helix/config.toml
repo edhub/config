@@ -21,3 +21,11 @@ enable = true
 
 [keys.normal.space]
 w = ":w" # Save
+
+[keys.normal]
+C-p = "goto_prev_paragraph"
+C-n = "goto_next_paragraph"
+
+[keys.insert]
+C-p = "goto_prev_paragraph"
+C-n = "goto_next_paragraph"

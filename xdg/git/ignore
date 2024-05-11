@@ -3,3 +3,8 @@
 
 # JetBrains IDEs
 .idea/
+
+xdg/clash/
+xdg/gtk-2.0/
+xdg/zed/
+xdg/github-copilot/

@@ -16,9 +16,9 @@ alias la='ls -a'
 alias ll='ls -la'
 alias lt='ls -T -L'
 
-# set proxy. With shadowsocks-ng
-alias setproxy="export ALL_PROXY=socks5://127.0.0.1:10000 && echo \"set proxy: ALL_PROXY=socks5://127.0.0.1:10000\""
-alias unsetproxy="unset ALL_PROXY && echo \"unset proxy\""
+# set network proxy env
+alias setproxy="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890"
+alias unsetproxy="unset https_proxy http_proxy all_proxy && echo \"unset proxy\""
 
 # brew daily
 # alias brewdaily="setproxy && brew upgrade && brew cleanup && unsetproxy"

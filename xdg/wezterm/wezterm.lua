@@ -20,6 +20,11 @@ config.font_size = 15.0
 config.initial_rows = 50
 config.initial_cols = 120
 
+config.font = wezterm.font_with_fallback {
+  'Hack Nerd Font',
+  'PingFang SC',
+}
+
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 

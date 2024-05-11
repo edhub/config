@@ -34,3 +34,7 @@ brew install font-hack-nerd-font squirrel alacritty
 pmset -c hibernatemode 0
 pmset -a standbydelay 86400
 ```
+
+```
+sudo ifconfig awdl0 down # shutdown awdl to make wifi better
+```
