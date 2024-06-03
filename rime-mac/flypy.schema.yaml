@@ -159,5 +159,5 @@ menu:
   page_size: 5 #候选项数
   
 style:
-  horizontal: true #竖排为false
-  
+  text_orientation: horizontal
+  candidate_list_layout: linear

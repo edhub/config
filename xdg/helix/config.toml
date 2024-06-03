@@ -1,7 +1,7 @@
 theme = "ayu_light"
 
 [editor]
-auto-pairs = false
+# auto-pairs = false
 auto-save = true
 
 [editor.cursor-shape]

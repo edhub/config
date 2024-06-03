@@ -4,6 +4,7 @@
     # F exit if one-screen
     # R retain color display
     pager = less -FXR
+	autocrlf = input
 
 [user]
     name = Edward Gu

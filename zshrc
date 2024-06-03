@@ -38,6 +38,7 @@ export PATH=$HOME/bin:$PATH
 #deno
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$HOME/.deno/bin:$PATH"
+export DENO_NO_UPGRADE_CHECK=1
 
 # starship
 eval "$(starship init zsh)"
