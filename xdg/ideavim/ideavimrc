@@ -1,0 +1,119 @@
+" ========= Basic =========
+
+let mapleader = " "
+
+" ========= Navigation =========
+
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases
+set smartcase
+
+" Highlight search results
+" set hlsearch
+
+" Makes search act like search in modern browsers
+set incsearch
+
+" match pairs
+set mps+=<:>
+
+" 4 lines above/below cursor when scrolling
+set scrolloff=4
+
+" ========= Editing =========
+
+" Fast saving
+" nnoremap <leader>w :w!<cr>
+
+" Always ways copy the word and only the word (without potential space)
+nnoremap ye yiw
+
+" Copy from current position to end of line
+nnoremap Y y$
+
+" Copy to clipboard
+nnoremap <leader>y "+y
+nnoremap <leader>Y "+Y
+
+" Substitute current word with content in " register
+nnoremap <Leader>v viw"0p
+vnoremap <Leader>v    "0p
+
+" Plugin: surround
+Plugin 'tpope/vim-surround'
+Plug 'https://www.vim.org/scripts/script.php?script_id=1697'
+Plug 'vim-surround'
+set surround
+
+" ========== Configs like Helix editor ==========
+" Ask github copilot to find action names: 
+" what's action name of <File Structure> which can be used in ideavimrc
+
+" Go to the end of the file
+noremap ge G
+
+" Go to the start of the file
+noremap gg gg
+
+" Go to the start of the line
+noremap gh 0
+
+" Go to the end of the line
+noremap gl $
+
+" Go to the first non-whitespace character of the line
+noremap gs ^
+
+" Go to definition
+noremap gd :action GotoDeclaration<CR>
+
+" Go to type definition
+noremap gy :action GotoTypeDeclaration<CR>
+
+" Go to references
+noremap gr :action FindUsages<CR>
+" ===== TODO find better alternatives
+
+" Go to implementation
+noremap gi :action GotoImplementation<CR>
+
+" Go to next buffer (file)
+" nnoremap gn :action NextEditorTab<CR>
+" ===== TODO find better alternatives
+
+" Go to previous buffer (file)
+" nnoremap gp :action PreviousEditorTab<CR>
+" ===== TODO find better alternatives
+
+" Open file picker
+noremap <Leader>f :action GotoFile<CR>
+
+" Open buffer picker
+noremap <Leader>b :action RecentFiles<CR>
+
+" Show documentation for item under cursor
+noremap <Leader>k :action QuickJavaDoc<CR>
+
+" Rename symbol
+noremap <Leader>r :action RenameElement<CR>
+
+" Apply code action
+noremap <Leader>a :action ShowIntentionActions<CR>
+
+" Yank selections to clipboard
+vnoremap <Leader>y "+y
+
+" Find symbol in this file
+nnoremap <Leader>s :action FileStructurePopup<CR>
+
+" Toggle line comment
+noremap <C-C> :action CommentByLineComment<CR>
+
+
+" Moving by paragraph
+noremap <C-N> }
+noremap <C-P> {
+inoremap <C-N> <Esc>}
+inoremap <C-P> <Esc>{

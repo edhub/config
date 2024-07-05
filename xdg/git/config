@@ -21,6 +21,13 @@
 [url "git@github.com:"]
     insteadOf = "https://github.com/"
 
+# Use gitlab-c
+[url "ssh://git@gitlab-c.fiture.com:6622/fitureai/"]
+    insteadOf = "ssh://git@gitlab.fiture.com:6622/fitureai/"
+
+[http "https://gerrit.googlesource.com"]
+    proxy = http://localhost:7890
+
 [alias]
     st = status
     cm = commit
