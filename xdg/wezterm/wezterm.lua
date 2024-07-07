@@ -45,5 +45,22 @@ config.keys = {
 
 config.window_close_confirmation = 'NeverPrompt'
 
+function clip_var(var)
+  if #var > 10 then
+      return string.sub(var, 1, 10) .. ".."
+  else
+      return var
+  end
+end
+
+wezterm.on(
+  'format-tab-title',
+  function(tab, tabs, panes, config, hover, max_width)
+    local cwd = tab.active_pane.current_working_dir
+    local folder_name = cwd.path:match("([^/]+)$")
+    return ' '.. clip_var(folder_name).. ' '
+  end
+)
+
 -- and finally, return the configuration to wezterm
 return config
